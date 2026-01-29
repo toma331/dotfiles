@@ -8,7 +8,6 @@
 (setq auto-save-default nil)   ; Stop creating #autosave# files
 
 (global-display-line-numbers-mode 1)
-;; (setq display-line-numbers 'relative)
 
 (setq inhibit-startup-screen t)   ; Disable startup screen
 (setq initial-scratch-message "") ; Empty scratch buffer
@@ -16,7 +15,8 @@
 ;; Tabs
 (setq-default indent-tabs-mode nil)
 (setq-default tab-width 4)
-(setq indent-line-function 'insert-tab)
+
+(setq c-basic-offset 4)
 
 (set-face-attribute 'default nil :font "IosevkaNerdFont-14.1")
 
