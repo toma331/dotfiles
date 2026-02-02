@@ -2,6 +2,8 @@
 (menu-bar-mode -1)
 (scroll-bar-mode -1)
 
+(electric-indent-mode -1)
+
 (setq ring-bell-function 'ignore)
 
 (setq make-backup-files nil)   ; Stop creating ~ backup files
