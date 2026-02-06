@@ -44,3 +44,24 @@
  ;; Your init file should contain only one such instance.
  ;; If there is more than one, they won't work right.
  )
+
+;; Other
+
+;; asm settings
+(add-hook 'asm-mode-hook
+          (lambda ()
+            (setq-local electric-indent-mode nil)
+            (setq-local indent-line-function #'ignore)
+            (setq-local comment-start ";")
+            (setq-local comment-end "")
+            (setq-local comment-start-skip ";+\\s-*")
+            
+            (local-set-key (kbd ";") #'self-insert-command)
+            
+            (when (boundp 'comment-dwim) (fmakunbound 'comment-dwim))
+            (when (boundp 'comment-indent) (fmakunbound 'comment-indent))
+          
+            (when (boundp 'electric-layout-mode) (electric-layout-mode -1))
+            (when (boundp 'electric-pair-mode) (electric-pair-mode -1))
+            (when (boundp 'electric-indent-local-mode) (electric-indent-local-mode -1))))
+
