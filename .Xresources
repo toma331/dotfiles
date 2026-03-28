@@ -1,0 +1,8 @@
+XTerm*selectToClipboard: true
+ 
+XTerm*VT100.Translations: #override \
+Ctrl Shift <Key>C: copy-selection(CLIPBOARD) \n\
+Ctrl Shift <Key>V: insert-selection(CLIPBOARD)
+ 
+XTerm*font: 9x15
+# xrdb -merge ~/.Xresources
