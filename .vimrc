@@ -10,9 +10,6 @@ set clipboard=unnamedplus " sudo apt install vim-gtk3
 call plug#begin()
   Plug 'neoclide/coc.nvim', {'branch': 'release'}
   Plug 'jackguo380/vim-lsp-cxx-highlight'
-  Plug 'ghifarit53/tokyonight-vim'
-  Plug 'preservim/nerdtree' 
-  Plug 'drsooch/gruber-darker-vim'
 call plug#end()
 
 set background=dark
@@ -21,7 +18,10 @@ set termguicolors
 " let g:tokyonight_style = 'night' " available: night, storm
 " let g:tokyonight_enable_italic = 1
 
-colorscheme GruberDarker 
+colorscheme quiet 
+
+nnoremap ; :
+nnoremap : ;
 
 nnoremap <leader>n :NERDTreeFocus<CR>
 nnoremap <C-n> :NERDTree<CR>
