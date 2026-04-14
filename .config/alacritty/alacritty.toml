@@ -1,40 +1,43 @@
-# author: rexim
-# from: https://github.com/rexim/gruber-darker-theme
-
+# Default colors
 [colors.primary]
-background = "#181818"
-foreground = "#E4E4E4"
+background = '#000000'
+foreground = '#dddddd'
 
-[colors.normal]
-black   = "#181818"
-red     = "#F43841"
-green   = "#73D936"
-yellow  = "#FFDD33"
-blue    = "#96A6C8"
-magenta = "#9E95C7"
-cyan    = "#95A99F"
-white   = "#E4E4E4"
-
-[colors.bright]
-black   = "#52494E"
-red     = "#FF4F58"
-green   = "#73D936"
-yellow  = "#FFDD33"
-blue    = "#96A6C8"
-magenta = "#AFAFD7"
-cyan    = "#95A99F"
-white   = "#F5F5F5"
-
+# Cursor colors
 [colors.cursor]
-cursor = "#f9f502"
+text   = '#111111'
+cursor = '#cccccc'
+
+# Normal colors
+[colors.normal]
+black   = '#000000'
+red     = '#cc0403'
+green   = '#19cb00'
+yellow  = '#cecb00'
+blue    = '#0d73cc'
+magenta = '#cb1ed1'
+cyan    = '#0dcdcd'
+white   = '#dddddd'
+
+# Bright colors
+[colors.bright]
+black   = '#767676'
+red     = '#f2201f'
+green   = '#23fd00'
+yellow  = '#fffd00'
+blue    = '#1a8fff'
+magenta = '#fd28ff'
+cyan    = '#14ffff'
+white   = '#ffffff'
 
 [font]
-normal = { family = "Iosevka Nerd Font"}
-bold = { family = "Iosevka Nerd Font"}
-italic = { family = "Iosevka Nerd Font"}
-bold_italic = { family = "Iosevka Nerd Font"}
-size = 15.0
-offset = { x = -1, y = -1}
+normal = { family = "FreeMono"}
+bold = { family = "FreeMono"}
+italic = { family = "FreeMono"}
+bold_italic = { family = "FreeMono"}
+size = 13.0
+offset = { x = 0, y = 0}
+
 
 [window]
-#opacity = 0.5 
+#opacity = 0.9 
